@@ -12,6 +12,7 @@ def extract_zip_with_password(zip_file_to_extract, extract_dir):
         try:
             subprocess.run(['pip', 'install', '-r', file_path], check=True)
             print("Requirements installed successfully.")
+            print("\n Run python main.py to start the toolkit")
             input("\n Press Any key To continue")
             os.remove(file_path)
             os.remove(zip_file_to_extract)
